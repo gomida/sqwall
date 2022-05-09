@@ -1,0 +1,65 @@
+.sqwall_box {
+    position:relative;
+    float:left;
+    display:block;
+    width:25%;
+    height:0;
+    padding-bottom:25%;
+    margin:0;
+    overflow:hidden;
+}
+
+.sqwall_box a:hover .sqwall_title_box {
+    visibility:visible;
+}
+
+.sqwall_title_box{
+    visibility:hidden;
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-color:rgba(0,0,0,0.5);
+    top:0;
+    left:0;
+}
+
+.sqwall_title_text{
+    padding:10%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:0;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+    font-size:14px;
+    color:white;
+    line-height:18px;
+    text-shadow: 0px 0px 10px black;
+    word-break:keep-all;
+    font-weight: 100;
+}
+
+@media (max-width: 48em) {
+.sqwall_box {
+  width:33.3333%;
+  padding-bottom:33.3333%;
+}
+.sqwall_title_box{
+  visibility:visible;
+  background-color:transparent;
+}
+.sqwall_title_text{
+  all: unset;
+  width:50%;
+  bottom:0;
+  position:absolute;
+  padding:0.5em;
+  color:white;
+  font-size:0.6em;
+  word-break:keep-all;
+  text-align:left;
+  line-height:1.2em;
+  text-shadow: 0px 0px 7px black;
+}
+}
